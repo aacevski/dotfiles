@@ -8,7 +8,7 @@ Before starting, make sure you have the following installed in your system:
 
 ### Git
 
-```sh
+```bash
 pacman -S git 
 ```
 
@@ -20,18 +20,26 @@ pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git
 
 ### Stow 
 
-```sh
+```bash
 pacman -S stow 
 ```
 
 ### Extras
 
-```sh
+```bash
 pacman -S qt5ct lxappearance-gtk3 xfce4-power-manager dunst picom polybar rofi feh redshift pulseaudio blueman gnome-screenshot
 ```
 
-```sh
+```bash
 yay -S qt5-styleplugins nm-applet
+```
+
+#### Installation
+
+```bash
+git clone git@github.com/dreamsofautonomy/dotfiles.git
+cd dotfiles
+stow .
 ```
 
 ## Preview
