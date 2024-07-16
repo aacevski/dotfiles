@@ -9,13 +9,13 @@ ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions)
 
 # Scripts
-export PATH="/home/andrej/.config/scripts:$PATH"
+export PATH="$HOME/.config/scripts:$PATH"
 
 # Starship 
 eval "$(starship init zsh)"
 
 # Zoxide
-export PATH="/home/andrej/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init zsh)"
 
 # Macchina
