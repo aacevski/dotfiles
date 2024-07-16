@@ -27,7 +27,7 @@ pacman -S stow
 ### Extras
 
 ```zsh
-pacman -S qt5ct lxappearance-gtk3 xfce4-power-manager dunst picom polybar rofi feh redshift pulseaudio blueman gnome-screenshot ttf-0xproto-nerd rofi-emoji
+pacman -S qt5ct lxappearance-gtk3 xfce4-power-manager dunst picom polybar rofi feh redshift pulseaudio blueman gnome-screenshot ttf-0xproto-nerd rofi-emoji i3lock
 ```
 
 ```zsh

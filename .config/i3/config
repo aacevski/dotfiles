@@ -50,13 +50,16 @@ bindsym $mod+o exec --no-startup-id dunstctl close
 bindsym $mod+Shift+o exec --no-startup-id dunstctl history-pop
 
 # Power manager
-exec --no-startup-id xfce4-power-manager 
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i ~/.config/wallpapers/ferns-blurred.png --nofork
 
 # Set background
 exec --no-startup-id feh --bg-scale ~/.config/wallpapers/ferns.jpg 
 
 # Start a terminal
 bindsym $mod+Return exec --no-startup-id kitty 
+
+# Lock screen
+bindsym $mod+Shift+l exec --no-startup-id i3lock -i ~/.config/wallpapers/ferns-blurred.png --nofork
 
 # Rofi 
 bindsym $mod+d exec --no-startup-id rofi -modi "drun" -show drun -config ~/.config/rofi/main_menu.rasi
@@ -103,21 +106,9 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# Move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
-
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
-
-# Split in horizontal orientation
-bindsym $mod+- split h
-
-# Split in vertical orientation
-bindsym $mod+= split v
 
 # Enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
