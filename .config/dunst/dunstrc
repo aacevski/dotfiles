@@ -34,20 +34,8 @@
     mouse_left_click = do_action
     mouse_middle_click = close_all
     mouse_right_click = close_current
-    # geometry = "320x6-20+35"
-    # startup_notification = false
-    # verbosity = mesg
-    # notification_height = 15
-
-## Section shortcuts is deprecated. ##
-# [shortcuts]
-#     close = ctrl+space
-#     history = ctrl+shift+space
-#     context = ctrl+shift+period
 
 [urgency_low]
-    # IMPORTANT: colors have to be defined in quotation marks.
-    # Otherwise the '#' and following  would be interpreted as a comment.
     background="#3a3a3a"
     foreground="#f5f5f5"
     timeout = 2
