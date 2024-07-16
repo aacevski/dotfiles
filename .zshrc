@@ -17,3 +17,6 @@ eval "$(starship init zsh)"
 # Zoxide
 export PATH="/home/andrej/.local/bin:$PATH"
 eval "$(zoxide init zsh)"
+
+# Macchina
+macchina
