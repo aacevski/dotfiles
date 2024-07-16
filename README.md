@@ -2,6 +2,6 @@
 
 My dotfiles I use on my Arch Linux machines.
 
-#### Preview
+### Preview
 
 <img src="preview.png" />
