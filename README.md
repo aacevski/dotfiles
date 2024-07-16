@@ -34,7 +34,7 @@ pacman -S qt5ct lxappearance-gtk3 xfce4-power-manager dunst picom polybar rofi f
 yay -S qt5-styleplugins nm-applet
 ```
 
-#### Installation
+## Installation
 
 ```bash
 git clone git@github.com/dreamsofautonomy/dotfiles.git
