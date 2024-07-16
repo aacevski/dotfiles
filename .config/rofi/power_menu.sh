@@ -3,7 +3,7 @@
 # reboot/poweroff/exit/
 OPTIONS="E\nR\nS"
 
-LAUNCHER="rofi -dmenu -config ~/.config/i3/rofi/power_menu.rasi"
+LAUNCHER="rofi -dmenu -config ~/.config/rofi/power_menu.rasi"
 USE_LOCKER="false"
 LOCKER="i3lock"
 
