@@ -30,8 +30,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # Language switcher
-exec "setxkbmap -layout us,mk"
-exec "setxkbmap -option 'grp:alt_shift_toggle'"
+exec_always "setxkbmap -model pc104 -layout us,mk -variant ,, -option grp:alt_shift_toggle"
 
 # Theme 
 client.focused          #3c3836 #32302f #fabd2f #fabd2f
