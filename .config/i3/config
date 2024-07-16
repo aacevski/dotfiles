@@ -59,6 +59,7 @@ bindsym $mod+Return exec --no-startup-id kitty
 bindsym $mod+d exec --no-startup-id rofi -modi "drun" -show drun -config ~/.config/rofi/main_menu.rasi
 bindsym $mod+Tab exec --no-startup-id rofi -modi "window" -show window -config ~/.config/rofi/windows_tasks.rasi
 bindsym $mod+p exec --no-startup-id sh ~/.config/rofi/power_menu.sh
+bindsym $mod+Shift+e exec --no-startup-id rofi -modi "emoji" -show emoji -config ~/.config/rofi/emoji.rasi
 
 # Volume 
 set $refresh_i3status killall -SIGUSR1 i3status

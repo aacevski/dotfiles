@@ -129,7 +129,7 @@ inputbar {
 }
 
 entry {
-    font: "Noto Sans CJK SC Bold 14";
+    font: "0xProto Regular 14";
     background-color:@bg;
     text-color:@fg;
 }
