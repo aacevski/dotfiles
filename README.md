@@ -27,11 +27,11 @@ pacman -S stow
 ### Extras
 
 ```zsh
-pacman -S qt5ct lxappearance-gtk3 xfce4-power-manager dunst picom polybar rofi feh redshift pulseaudio blueman gnome-screenshot
+pacman -S qt5ct lxappearance-gtk3 xfce4-power-manager dunst picom polybar rofi feh redshift pulseaudio blueman gnome-screenshot ttf-0xproto-nerd
 ```
 
 ```zsh
-yay -S qt5-styleplugins nm-applet
+yay -S qt5-styleplugins nm-applet 
 ```
 
 ## Installation
