@@ -20,3 +20,10 @@ eval "$(zoxide init zsh)"
 
 # Macchina
 macchina
+
+# Fnm
+FNM_PATH="/home/andrej/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/andrej/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
