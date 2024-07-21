@@ -37,7 +37,7 @@ yay -S qt5-styleplugins nm-applet
 ## Installation
 
 ```zsh
-git clone git@github.com/dreamsofautonomy/dotfiles.git
+git clone git@github.com/aacevski/dotfiles.git
 cd dotfiles
 stow .
 ```
