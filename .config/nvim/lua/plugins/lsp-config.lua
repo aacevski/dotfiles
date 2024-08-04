@@ -15,6 +15,7 @@ return {
 					"tsserver",
 					"html",
 					"tailwindcss",
+          "terraformls",
 				},
 			})
 		end,
