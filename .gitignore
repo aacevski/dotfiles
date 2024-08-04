@@ -1,12 +1,14 @@
-*
+/*
 
 lazy-lock.json
+.config/*
 !.config/dunst/**
-!.config/i3/**
-!.config/kitty/**
-!.config/nvim/**
-!.config/picom/**
-!.config/rofi/**
-!.config/scripts/**
-!.config/wallpapers/**
+!.config/i3
+!.config/kitty
+!.config/nvim/
+!.config/picom
+!.config/rofi
+!.config/scripts
+!.config/wallpapers
+
 

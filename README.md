@@ -5,41 +5,15 @@ This repository contains all of my dotfiles that I use on my Arch Linux systems.
 ## Requirements
 Before starting, make sure you have the following installed in your system:
 
-
-### Git
-
 ```zsh
-pacman -S git 
+sudo pacman -S ansible git
 ```
 
-### Yay 
+## Clone the repo and setup with Ansible
 
 ```zsh
-pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-```
-
-### Stow 
-
-```zsh
-pacman -S stow 
-```
-
-### Extras
-
-```zsh
-pacman -S qt5ct lxappearance-gtk3 xfce4-power-manager dunst picom polybar rofi feh redshift pulseaudio blueman gnome-screenshot ttf-0xproto-nerd rofi-emoji i3lock
-```
-
-```zsh
-yay -S qt5-styleplugins nm-applet 
-```
-
-## Installation
-
-```zsh
-git clone git@github.com/aacevski/dotfiles.git
-cd dotfiles
-stow .
+git clone git@github.com/aacevski/dotfiles.git ~/dotfiles && cd ~/dotfiles
+ansible-playbook dotfiles_setup.yml --ask-become-pass
 ```
 
 ## Preview

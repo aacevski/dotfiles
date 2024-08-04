@@ -1,0 +1,61 @@
+---
+- name: Setup Dotfiles and Required Packages
+  hosts: localhost
+  become: yes 
+
+  tasks:
+    - name: Update package cache
+      pacman:
+        update_cache: yes
+
+    - name: Install required packages with pacman
+      pacman:
+        name:
+          - git
+          - base-devel
+          - stow
+          - qt5ct
+          - lxappearance-gtk3
+          - xfce4-power-manager
+          - dunst
+          - picom
+          - polybar
+          - rofi
+          - feh
+          - redshift
+          - pulseaudio
+          - blueman
+          - gnome-screenshot
+          - ttf-0xproto-nerd
+          - rofi-emoji
+          - i3lock
+          - zsh
+        state: present
+
+    - name: Install yay
+      become: no 
+      block:
+        - name: Clone yay repository
+          git:
+            repo: https://aur.archlinux.org/yay.git
+            dest: /tmp/yay
+        - name: Build and install yay
+          command: makepkg -si --noconfirm
+          args:
+            chdir: /tmp/yay
+            creates: /usr/bin/yay
+
+    - name: Install AUR packages with yay
+      become: no
+      command: yay -S --noconfirm qt5-styleplugins nm-applet
+
+    - name: Stow dotfiles
+      become: no
+      command: stow .
+      args:
+        chdir: ~/dotfiles
+
+    - name: Set zsh as default shell
+      user:
+        name: "{{ ansible_user_id }}"
+        shell: /bin/zsh
