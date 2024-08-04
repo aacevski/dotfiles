@@ -18,4 +18,5 @@ ansible-playbook dotfiles_setup.yml --ask-become-pass
 
 ## Preview
 
-<img src="preview.png" />
+<img width="100%" align="center" src="kitty.png" />
+<img width="100%" align="center" src="coding.png" />

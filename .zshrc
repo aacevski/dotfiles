@@ -27,3 +27,10 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="/home/andrej/.local/share/fnm:$PATH"
   eval "`fnm env`"
 fi
+
+# bun completions
+[ -s "/home/andrej/.bun/_bun" ] && source "/home/andrej/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
